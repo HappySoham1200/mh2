@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+
+
+.Logo{
+  color: burlywood;
+  font-size: 45px;
+  font-family: Lobster;
+  padding: 0 20px;
+}
+
+nav {
+  background: cyan;
+  height: 80px;
+  width: 100%;
+}
+nav ul{
+  padding: 20px 0;
+  float: right;
+  margin-right:  20px;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  border: solid white 2px ;
+  padding: 7px 10px;
+  cursor: pointer;
+
+}
+
+nav ul li a:hover{
+  transition: 1s;
+  background: black;
+}
+
+.cont{
+  background-image: url(Good\ Behavour2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #424144;
+  height: 100vh;
+}
+
+.cont h1{
+
+  font-size: 40px;
+
+}
+
+.cont p{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.pg{
+  display: flex;
+  justify-content: center;
+}
+
+.c2{
+
+  background-image: url(GoodBehavour22.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 36%;
+  padding: 30px;
+  margin: 30px;
+
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+  body{
+    background: cyan;
+  }
+  nav{
+    /* background: red; */
+    height: auto;
+  }
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .cont{
+    background-image: url(Good\ Behavour2.png);
+    background-size: 80vh;
+    width: 390px;
+    height: 300px ;
+    background-size: cover;
+    background-position: center;
+    /* margin: 5px;
+    padding: 5px; */
+  }
+
+}
+
+
+
+
+
+
+
+

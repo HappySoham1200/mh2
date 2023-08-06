@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+
+.cont{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    gap: 60px;
+    overflow: hidden;
+}
+
+.cont .box{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont .box .conte{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.cont .box .conte .icons img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: 40px;
+    border: 2px solid var(--clr) ;
+    padding: 25px;
+    font-size: 2.5rem;
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out;
+}
+
+.cont .box .conte .icons img:hover{
+    transition: 0.9s;
+    background: var(--clr);
+}
+
+.cont .box:hover .conte .icons img{
+    box-shadow:  0 0 0 4px #2e2e2e, 
+    0 0 0 30px var(--clr);
+}
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <form onsubmit="Mail(); reset(); return false">
+
+<label for="name">Your Name</label>
+
+<input type="text" name="name" placeholder="Your Name" id="name">
+
+<label for="email">Your mail</label>
+
+<input type="text" name="email" placeholder="Your email" id="email">
+
+<label for="name">Your Name</label>
+
+<textarea type="text" name="message" placeholder="Your message" id="message"></textarea>
+
+<input type="submit" value="Submit">
+
+</form>
+</form>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+<script>
+    function Mail(){
+
+
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let message = document.getElementById("message").value;
+
+
+let body = "Name-- " + name + "<br/> Email-- " + email + "<br/> Message-- " + message;
+
+
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "maitymanindranath1946@gmail.com",
+    Password : "D094CAC2515C8FE55CAA3B37744A8787604C",
+    To : 'happysoham28@gmail.com',
+    From : "maitymanindranath1946@gmail.com",
+    Subject : "This is the subject",
+    Body : body
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+
+</body>
+</html>

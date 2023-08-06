@@ -1,0 +1,23 @@
+input, textarea, button {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    font-size: 1.2rem;
+  }
+  input[type="text"], input[type="email"], textarea {
+    margin: 0 0 1em;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  textarea {
+    height: 6em;
+  }
+  input[type="submit"], button {
+    background: #4570F3;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover, button:hover {
+    background: #6E65F4;
+  }
